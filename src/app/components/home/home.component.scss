@@ -1,0 +1,40 @@
+ngb-progressbar {
+    margin-top: 5rem;
+}
+.textFamilyStyle {
+    font-family: Brush Script MT, sans-serif;
+    font-size: 900%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.textColor {
+    color: #ffffff
+}
+.textFontFamilyWelcome {
+    font-family: Century Gothic, sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.textFontFamilyMain{
+    font-family: Yu Gothic UI Semilight, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.grow {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}

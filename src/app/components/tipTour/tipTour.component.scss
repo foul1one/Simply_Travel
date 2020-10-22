@@ -1,0 +1,58 @@
+.h2, h3, p{
+    font-family: Yu Gothic UI Semilight, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 140%;
+}
+
+button {
+    background-color: #4fc7bd;
+    border: 0px;
+    font-family: Yu Gothic UI Semilight, sans-serif;
+}
+.textFontFamilyWelcome {
+    font-family: Century Gothic, sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pictureAbout {
+    width: 70%;
+    height: 40%;
+    border-radius: 60px;
+    border: 2px solid #4fc7bd;
+}
+
+hr {
+    border: none; 
+    background-color: #4fc7bd; 
+    color:#4fc7bd; 
+    height: 5px;
+}
+
+
+
+    
+.grow:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.grow {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ngb-carousel > span {
+    display: none;
+}
+

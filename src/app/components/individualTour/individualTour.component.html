@@ -1,0 +1,73 @@
+<div class="wrapper">
+  <div class="page-header section-dark" style="background-image: url('assets/img/background.jpg');">
+    <div class="filter"></div>
+    <div class="moving-clouds" style="background-image: url('assets/img/clouds.png');"></div>
+    <div class="content-center" [@fadeIn-wrapper]>
+      <div class="container">
+        <div class="title-brand">
+          <h2 class="textFontFamilyWelcome">Заполните форму и мы создадим для вас путешествие мечты</h2>
+        </div>
+      </div>
+      <div class="card" style="padding: 15px; background-color: #4fc7bd; margin-top: 20px;">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">ФИО</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="ФИО" [(ngModel)]="fio" name="fio">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Номер телефона</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="+7-(999)-00-00-000" [(ngModel)]="number" name="number">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Какую суммы вы готовы вложить в путешествие?</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="₽" value="₽">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Кто составит вам компанию?</label>
+              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="pusto">
+                <option value="1">Семья</option>
+                <option value="2">Друзья</option>
+                <option value="3">Возлюбленный / Возлюбленная</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label>Выберите даты путешествия</label>
+              <form class="form-inline">
+                <div class="form-group" >
+                    <div style="background-color: #4fc7bd;" class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
+                        <input style="width: 317px;" class="form-control" placeholder="дд.мм.гггг - дд.мм.гггг"
+                             name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                        <div style="background-color: #4fc7bd;" class="input-group-append">
+                            <span class="glyphicon glyphicon-calendar input-group-text">
+                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Ваш вариант компаньона</label>
+              <input type="text" class="form-control" id="inputPassword4" >
+            </div>
+            <div class="form-group col-md-6" style="text-align: right; margin-top: 30px;">
+              <button style="background-color: white; border: 0px; color: #255c57; width: 150px;" class="btn btn-round">Далее</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>Спасибо, что пользуетесь нашими услугами</footer>
